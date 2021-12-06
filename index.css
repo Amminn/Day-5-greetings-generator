@@ -1,0 +1,99 @@
+:root {
+    --wine-red: #C7375F;
+    --bright-red: #D42D2F;
+    --dark-green: #344D2F;
+    --light-green: #77A047;
+    --gold: #FAC57D;
+    --snow: #F0F4F7;
+  }
+  
+  *, html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      background: var(--wine-red);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Caveat', cursive;
+      background-image: url(https://images.pexels.com/photos/6101961/pexels-photo-6101961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .card {
+      width: 400px;
+      background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      min-height: 300px;
+      border-radius: 5px;
+      /* background: var(--snow); */
+      font-size: 2rem;    
+      text-align: center;
+      padding: 1em;
+      position: relative;
+      margin-bottom: 1em;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  .card h3 {
+      /* font-size: 1.5rem; */
+      color: white;
+      margin-bottom: 2rem;
+  }
+
+  .sign {
+      position: absolute;
+      top: 80%;
+      right: 5%;
+      color: black;
+  }
+  
+  p {
+     /* position: absolute;
+     top: 50%;
+     left: 50%; */
+     font-size: 1.9rem;
+     color: white;
+     font-weight: 700;
+     /* transform: translate(-50%, -50%); */ 
+  }
+
+  #greeting-display {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  button {
+      border: none;
+      background-color: var(--gold);
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+
+  .input-2col {
+      width: 400px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  input {
+      margin-bottom: .7rem;
+      padding: .5rem;
+      width: 48%;
+      font-size: 1.2rem;
+      border-radius: .3rem;
+      border: 1px solid black;
+  }
